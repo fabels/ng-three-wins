@@ -1,0 +1,58 @@
+:host {
+    .gameover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        color: whitesmoke;
+
+        &>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            &>div {
+                text-align: center;
+            }
+        }
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        border-bottom: 1px solid black;
+
+        &>div {
+            border-right: 1px solid black;
+            padding: 5px;
+        }
+
+        &>div:last-child {
+            border: 0;
+        }
+    }
+
+    .row:last-child {
+        border-bottom: 0;
+    }
+
+    .field {
+        color: white;
+    }
+
+    .clicked {
+        color: black;
+    }
+}
